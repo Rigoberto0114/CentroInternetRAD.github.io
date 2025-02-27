@@ -1,12 +1,8 @@
-function comprar() {
-    alert("¡Tu pedido ha sido agregado al carrito!");
-}
-
-function realizarPago() {
-    let metodo = prompt("¿Cómo deseas pagar? (Yappy, PayPal, Transferencia)");
-    if (metodo) {
-        alert("Redirigiendo a " + metodo + "...");
+document.getElementById("btnPlanes").addEventListener("click", function() {
+    let planes = document.getElementById("planes");
+    if (planes.classList.contains("oculto")) {
+        planes.classList.remove("oculto");
     } else {
-        alert("Método de pago no seleccionado.");
+        planes.classList.add("oculto");
     }
-}
+});
