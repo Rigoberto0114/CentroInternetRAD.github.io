@@ -60,6 +60,25 @@
         <p>Azur Lane Pack mensual → Se cobra $6</p>
         <p>Fate/Grand Order 30 Quartz → Se cobra $21.50</p>
     </section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".zoom-section");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("zoom-active");
+                } else {
+                    entry.target.classList.remove("zoom-active");
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
+    });
+</script>
 
 </body>
 </html>
