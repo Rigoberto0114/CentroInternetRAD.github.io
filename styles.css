@@ -37,56 +37,52 @@ a:hover {
 section {
     padding: 20px;
     margin-top: 20px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
 }
 
+/* Estilo para ocultar los planes inicialmente */
 .oculto {
     display: none;
 }
 
-/* Estilo para mostrar los planes con animación */
+/* Mejoras en la animación de los planes */
 .plan {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 15px;
-    margin: 20px auto;
-    width: 80%;
+    margin: 15px auto;
+    width: 90%;
     color: white;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    transform: translateY(30px);
+    transform: translateY(20px);
     opacity: 0;
-    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-/* Añadir una animación activa para la visualización */
 .plan.zoom-active {
     transform: translateY(0);
     opacity: 1;
 }
 
-/* Mejorar el efecto del botón al pasar el ratón */
+/* Efecto de hover en el botón */
 button {
     background-color: #8B0000;
     color: white;
     border: none;
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #A52A2A;
-    transform: scale(1.1);
 }
 
 button:focus {
     outline: none;
 }
 
-/* Efecto de zoom en los planes cuando son visibles */
+/* Animación de transición de planes al hacer scroll */
 .zoom-section {
     transform: scale(0.95);
     opacity: 0;
