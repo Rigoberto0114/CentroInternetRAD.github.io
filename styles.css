@@ -38,8 +38,6 @@ nav a:hover {
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 8px;
-    opacity: 0; /* Inicialmente oculto */
-    transition: opacity 0.5s ease-out; /* Transición suave cuando se hace visible */
 }
 
 .plan h2 {
@@ -59,11 +57,6 @@ button {
 
 button:hover {
     background-color: #4d4dff;
-}
-
-/* Estilo para mostrar los planes */
-.plan.visible {
-    opacity: 1; /* Cuando esté visible, tendrá opacidad 1 */
 }
 
 /* Estilo para ocultar los planes */
