@@ -17,8 +17,12 @@
         </nav>
     </header>
 
-    <section id="planes">
-        <div class="plan zoom-section">
+    <!-- Botón para mostrar/ocultar los planes con aria-label para accesibilidad -->
+    <button id="btnPlanes" aria-label="Mostrar u ocultar los planes">Mostrar/Ocultar Planes</button>
+
+    <!-- Sección de planes que se mostrará u ocultará -->
+    <section id="planes" class="oculto">
+        <div class="plan">
             <h2>Netflix - Centro Internet R.A.D</h2>
             <h3>Planes (incluye comisión de gestión)</h3>
             <p>Básico: USD 6.99/mes (+ $1 de gestión)</p>
@@ -26,83 +30,16 @@
             <p>Premium: USD 15.49/mes (+ $1.50 de gestión)</p>
         </div>
 
-        <div class="plan zoom-section">
+        <div class="plan">
             <h2>Disney+ - Centro Internet R.A.D</h2>
             <h3>Planes (incluye comisión de gestión)</h3>
             <p>Estándar: USD 13.49/mes (+ $1.50 de gestión)</p>
             <p>Premium: USD 18.49/mes (+ $1.50 de gestión)</p>
         </div>
 
-        <div class="plan zoom-section">
-            <h2>Spotify - Centro Internet R.A.D</h2>
-            <h3>Planes (incluye comisión de gestión)</h3>
-            <p>Individual: USD 10.99/mes (+ $1 de gestión)</p>
-            <p>Familiar: USD 16.49/mes (+ $1.50 de gestión)</p>
-        </div>
-
-        <div class="plan zoom-section">
-            <h2>Recargas de Internet y Videojuegos - Centro Internet R.A.D</h2>
-            <h3>Recargas de Internet</h3>
-            <p>Claro, Tigo y MásMóvil (monto variable según necesidad del cliente)</p>
-            <p>$3 → Se cobra $3.50</p>
-            <p>$5 → Se cobra $5.50</p>
-            <p>$10 → Se cobra $11</p>
-        </div>
-
-        <div class="plan zoom-section">
-            <h3>Planes y Membresías para Videojuegos</h3>
-            <p><strong>PlayStation Plus</strong></p>
-            <p>Essential (1 mes): $10.99 (+$1 de gestión)</p>
-            <p>Extra (1 mes): $15.49 (+$1.50 de gestión)</p>
-            <p>Premium (1 mes): $18.99 (+$1.50 de gestión)</p>
-
-            <p><strong>Xbox Game Pass</strong></p>
-            <p>Game Pass Ultimate (1 mes): $16.99 (+$1.50 de gestión)</p>
-            <p>Game Pass PC (1 mes): $9.99 (+$1 de gestión)</p>
-
-            <p><strong>Nintendo Switch Online</strong></p>
-            <p>Individual (1 mes): $3.99 (+$0.50 de gestión)</p>
-            <p>Familiar (12 meses): $34.99 (+$2 de gestión)</p>
-        </div>
-
-        <div class="plan zoom-section">
-            <h3>Recargas y Planes para Juegos Gacha - Centro Internet R.A.D</h3>
-            <p><strong>Genshin Impact / Honkai: Star Rail</strong></p>
-            <p>Bendición Lunar ($4.99) → Se cobra $6</p>
-            <p>Expedición de Suministros ($4.99) → Se cobra $6</p>
-        </div>
-
-        <div class="plan zoom-section">
-            <h3>Recargas de Moneda Premium</h3>
-            <p>(Se cobra +$1.50 por cada $10 de recarga en todos los juegos)</p>
-            <p>Genshin Impact / Honkai: Star Rail (Cristales Génesis / Jade Estelar)</p>
-            <p>300 Cristales ($4.99) → Se cobra $6</p>
-            <p>980 Cristales ($14.99) → Se cobra $16.50</p>
-            <p>1980 Cristales ($29.99) → Se cobra $31.50</p>
-            <p>3280 Cristales ($49.99) → Se cobra $51.50</p>
-        </div>
-
+        <!-- Puedes agregar más planes aquí -->
     </section>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const sections = document.querySelectorAll(".zoom-section");
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("zoom-active");
-                    } else {
-                        entry.target.classList.remove("zoom-active");
-                    }
-                });
-            }, { threshold: 0.3 });
-
-            sections.forEach((section) => {
-                observer.observe(section);
-            });
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
