@@ -1,105 +1,45 @@
-<section id="planes" class="oculto">
-    <!-- Plan de Netflix -->
-    <div class="plan">
-        <h2>Netflix - Centro Internet R.A.D</h2>
-        <h3>Planes (incluye comisión de gestión)</h3>
-        <p>Básico: USD 6.99/mes (+ $1 de gestión)</p>
-        <p>Estándar: USD 11.49/mes (+ $1.50 de gestión)</p>
-        <p>Premium: USD 15.49/mes (+ $1.50 de gestión)</p>
-    </div>
-
-    <!-- Plan de Disney+ -->
-    <div class="plan">
-        <h2>Disney+ - Centro Internet R.A.D</h2>
-        <h3>Planes (incluye comisión de gestión)</h3>
-        <p>Estándar: USD 13.49/mes (+ $1.50 de gestión)</p>
-        <p>Premium: USD 18.49/mes (+ $1.50 de gestión)</p>
-    </div>
-
-    <!-- Plan de Spotify -->
-    <div class="plan">
-        <h2>Spotify - Centro Internet R.A.D</h2>
-        <h3>Planes (incluye comisión de gestión)</h3>
-        <p>Individual: USD 10.99/mes (+ $1 de gestión)</p>
-        <p>Familiar: USD 16.49/mes (+ $1.50 de gestión)</p>
-    </div>
-
-    <!-- Recargas de Internet -->
-    <div class="plan">
-        <h2>Recargas de Internet y Videojuegos - Centro Internet R.A.D</h2>
-        <h3>Recargas de Internet</h3>
-        <p>Claro, Tigo y MásMóvil (monto variable según necesidad del cliente)</p>
-        <p>$3 → Se cobra $3.50</p>
-        <p>$5 → Se cobra $5.50</p>
-        <p>$10 → Se cobra $11</p>
-    </div>
-
-    <!-- Recargas de Videojuegos -->
-    <div class="plan">
-        <h2>Planes y Membresías para Videojuegos - Centro Internet R.A.D</h2>
-        <h3>PlayStation Plus</h3>
-        <p>Essential (1 mes): $10.99 (+$1 de gestión)</p>
-        <p>Extra (1 mes): $15.49 (+$1.50 de gestión)</p>
-        <p>Premium (1 mes): $18.99 (+$1.50 de gestión)</p>
-
-        <h3>Xbox Game Pass</h3>
-        <p>Game Pass Ultimate (1 mes): $16.99 (+$1.50 de gestión)</p>
-        <p>Game Pass PC (1 mes): $9.99 (+$1 de gestión)</p>
-
-        <h3>Nintendo Switch Online</h3>
-        <p>Individual (1 mes): $3.99 (+$0.50 de gestión)</p>
-        <p>Familiar (12 meses): $34.99 (+$2 de gestión)</p>
-    </div>
-
-    <!-- Recargas de Tarjetas Digitales -->
-    <div class="plan">
-        <h2>Recargas de Videojuegos - Centro Internet R.A.D</h2>
-        <h3>PlayStation Store</h3>
-        <p>$10 → Se cobra $11.50</p>
-        <p>$25 → Se cobra $26.50</p>
-        <p>$50 → Se cobra $51.50</p>
-
-        <h3>Xbox Store</h3>
-        <p>$10 → Se cobra $11.50</p>
-        <p>$25 → Se cobra $26.50</p>
-        <p>$50 → Se cobra $51.50</p>
-
-        <h3>Nintendo eShop</h3>
-        <p>$10 → Se cobra $11.50</p>
-        <p>$20 → Se cobra $21.50</p>
-        <p>$50 → Se cobra $51.50</p>
-        
-        <!-- Más recargas de otras plataformas... -->
-    </div>
-
-    <!-- Recargas y Planes para Juegos Gacha -->
-    <div class="plan">
-        <h2>Recargas y Planes para Juegos Gacha - Centro Internet R.A.D</h2>
-        <h3>Genshin Impact / Honkai: Star Rail</h3>
-        <p>Bendición Lunar ($4.99) → Se cobra $6</p>
-        <p>Expedición de Suministros ($4.99) → Se cobra $6</p>
-
-        <h3>Azur Lane / Arknights / Blue Archive</h3>
-        <p>Pack mensual ($4.99) → Se cobra $6</p>
-        <p>Pack mensual premium ($9.99) → Se cobra $11.50</p>
-
-        <h3>Fate/Grand Order</h3>
-        <p>Premium Summon Pack ($4.99) → Se cobra $6</p>
-        <p>Monthly Summon Pack ($9.99) → Se cobra $11.50</p>
-    </div>
-
-    <!-- Recargas de Moneda Premium -->
-    <div class="plan">
-        <h2>Recargas de Moneda Premium - Centro Internet R.A.D</h2>
-        <h3>Genshin Impact / Honkai: Star Rail</h3>
-        <p>300 Cristales ($4.99) → Se cobra $6</p>
-        <p>980 Cristales ($14.99) → Se cobra $16.50</p>
-        <p>1980 Cristales ($29.99) → Se cobra $31.50</p>
-
-        <h3>Blue Archive (Pyroxenes)</h3>
-        <p>1200 Pyroxenes ($9.99) → Se cobra $11.50</p>
-        <p>2400 Pyroxenes ($19.99) → Se cobra $21.50</p>
-
-        <!-- Más recargas de moneda premium... -->
-    </div>
-</section>
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Planes - Centro Internet R.A.D</title>  
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+  
+    <header>  
+        <h1>Planes y Recargas - Centro Internet R.A.D</h1>  
+        <nav>  
+            <a href="index.html">Inicio</a>  
+            <a href="planes.html">Planes</a>  
+            <a href="terminos.html">Términos y Condiciones</a>  
+        </nav>  
+    </header>  
+  
+    <!-- Botón para mostrar/ocultar los planes -->  
+    <button id="btnPlanes">Mostrar/Ocultar Planes</button>  
+  
+    <!-- Sección de planes que se mostrará u ocultará -->  
+    <section id="planes" class="oculto">  
+        <div class="plan">  
+            <h2>Netflix - Centro Internet R.A.D</h2>  
+            <h3>Planes (incluye comisión de gestión)</h3>  
+            <p>Básico: USD 6.99/mes (+ $1 de gestión)</p>  
+            <p>Estándar: USD 11.49/mes (+ $1.50 de gestión)</p>  
+            <p>Premium: USD 15.49/mes (+ $1.50 de gestión)</p>  
+        </div>  
+  
+        <div class="plan">  
+            <h2>Disney+ - Centro Internet R.A.D</h2>  
+            <h3>Planes (incluye comisión de gestión)</h3>  
+            <p>Estándar: USD 13.49/mes (+ $1.50 de gestión)</p>  
+            <p>Premium: USD 18.49/mes (+ $1.50 de gestión)</p>  
+        </div>  
+  
+        <!-- Puedes agregar más planes aquí -->  
+    </section>  
+  
+    <script src="script.js"></script>  
+</body>  
+</html>
