@@ -39,17 +39,50 @@ section {
     margin-top: 20px;
 }
 
+/* Estilo para ocultar los planes inicialmente */
+.oculto {
+    display: none;
+}
+
+/* Mejoras en la animación de los planes */
 .plan {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 15px;
-    margin: 10px auto;
+    margin: 15px auto;
     width: 90%;
     color: white;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-/* Animación de Zoom */
+.plan.zoom-active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Efecto de hover en el botón */
+button {
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #A52A2A;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Animación de transición de planes al hacer scroll */
 .zoom-section {
     transform: scale(0.95);
     opacity: 0;
