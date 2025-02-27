@@ -17,52 +17,33 @@
         </nav>
     </header>
 
+    <!-- Contenedor de la imagen dinámica -->
+    <div class="image-overlay"></div>
+
     <section id="planes">
         <h2>Planes (incluye comisión de gestión)</h2>
 
-        <div class="plan zoom-section">
+        <div class="plan zoom-section" data-image="netflix.png">
             <h3>Netflix</h3>
             <p>Básico: USD 6.99/mes (+ $1 de gestión)</p>
             <p>Estándar: USD 11.49/mes (+ $1.50 de gestión)</p>
             <p>Premium: USD 15.49/mes (+ $1.50 de gestión)</p>
         </div>
 
-        <div class="plan zoom-section">
+        <div class="plan zoom-section" data-image="disney.png">
             <h3>Disney+</h3>
             <p>Estándar: USD 13.49/mes (+ $1.50 de gestión)</p>
             <p>Premium: USD 18.49/mes (+ $1.50 de gestión)</p>
         </div>
 
-        <div class="plan zoom-section">
+        <div class="plan zoom-section" data-image="spotify.png">
             <h3>Spotify</h3>
             <p>Individual: USD 10.99/mes (+ $1 de gestión)</p>
             <p>Familiar: USD 16.49/mes (+ $1.50 de gestión)</p>
         </div>
 
-        <h2>Recargas de Internet</h2>
-        <div class="plan zoom-section">
-            <p>Claro, Tigo y MásMóvil (monto variable según necesidad del cliente)</p>
-            <p>$3 → Se cobra $3.50</p>
-            <p>$5 → Se cobra $5.50</p>
-            <p>$10 → Se cobra $11</p>
-        </div>
-
-        <h2>Planes y Membresías para Videojuegos</h2>
-        <div class="plan zoom-section">
-            <p>PlayStation Plus Essential (1 mes): $10.99 (+$1 de gestión)</p>
-            <p>Xbox Game Pass Ultimate (1 mes): $16.99 (+$1.50 de gestión)</p>
-            <p>Nintendo Switch Online (Individual 1 mes): $3.99 (+$0.50 de gestión)</p>
-        </div>
-
-        <h2>Recargas de Videojuegos</h2>
-        <div class="plan zoom-section">
-            <p>PlayStation Store $10 → Se cobra $11.50</p>
-            <p>Xbox Store $25 → Se cobra $26.50</p>
-            <p>Steam Wallet $20 → Se cobra $21.50</p>
-        </div>
-
-        <h2>Recargas y Planes para Juegos Gacha</h2>
-        <div class="plan zoom-section">
+        <h2>Recargas y Planes para Juegos</h2>
+        <div class="plan zoom-section" data-image="genshin.png">
             <p>Genshin Impact Bendición Lunar → Se cobra $6</p>
             <p>Azur Lane Pack mensual → Se cobra $6</p>
             <p>Fate/Grand Order 30 Quartz → Se cobra $21.50</p>
@@ -72,20 +53,23 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const sections = document.querySelectorAll(".zoom-section");
+            const imageOverlay = document.querySelector(".image-overlay");
 
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add("zoom-active");
+                        const image = entry.target.getAttribute("data-image");
+                        imageOverlay.style.backgroundImage = `url('images/${image}')`;
+                        imageOverlay.classList.add("visible");
                     } else {
                         entry.target.classList.remove("zoom-active");
+                        imageOverlay.classList.remove("visible");
                     }
                 });
-            }, { threshold: 0.2 });
+            }, { threshold: 0.5 });
 
-            sections.forEach((section) => {
-                observer.observe(section);
-            });
+            sections.forEach((section) => observer.observe(section));
         });
     </script>
 
