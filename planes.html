@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro Internet R.A.D - Planes</title>
+    <title>Planes - Centro Internet R.A.D</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Centro Internet R.A.D</h1>
+        <h1>Planes y Recargas - Centro Internet R.A.D</h1>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="planes.html">Planes</a>
@@ -17,178 +17,29 @@
         </nav>
     </header>
 
-    <section id="planes">
-        <h2>Planes de Streaming</h2>
+    <!-- Botón para mostrar/ocultar los planes con aria-label para accesibilidad -->
+    <button id="btnPlanes" aria-label="Mostrar u ocultar los planes">Mostrar/Ocultar Planes</button>
 
-        <h3>Netflix - Centro Internet R.A.D</h3>
-        <p><strong>Planes (incluye comisión de gestión)</strong></p>
-        <ul>
-            <li>Básico: USD 6.99/mes (+ $1 de gestión)</li>
-            <li>Estándar: USD 11.49/mes (+ $1.50 de gestión)</li>
-            <li>Premium: USD 15.49/mes (+ $1.50 de gestión)</li>
-        </ul>
+    <!-- Sección de planes que se mostrará u ocultará -->
+    <section id="planes" class="oculto">
+        <div class="plan">
+            <h2>Netflix - Centro Internet R.A.D</h2>
+            <h3>Planes (incluye comisión de gestión)</h3>
+            <p>Básico: USD 6.99/mes (+ $1 de gestión)</p>
+            <p>Estándar: USD 11.49/mes (+ $1.50 de gestión)</p>
+            <p>Premium: USD 15.49/mes (+ $1.50 de gestión)</p>
+        </div>
 
-        <h3>Disney+ - Centro Internet R.A.D</h3>
-        <p><strong>Planes (incluye comisión de gestión)</strong></p>
-        <ul>
-            <li>Estándar: USD 13.49/mes (+ $1.50 de gestión)</li>
-            <li>Premium: USD 18.49/mes (+ $1.50 de gestión)</li>
-        </ul>
+        <div class="plan">
+            <h2>Disney+ - Centro Internet R.A.D</h2>
+            <h3>Planes (incluye comisión de gestión)</h3>
+            <p>Estándar: USD 13.49/mes (+ $1.50 de gestión)</p>
+            <p>Premium: USD 18.49/mes (+ $1.50 de gestión)</p>
+        </div>
 
-        <h3>Spotify - Centro Internet R.A.D</h3>
-        <p><strong>Planes (incluye comisión de gestión)</strong></p>
-        <ul>
-            <li>Individual: USD 10.99/mes (+ $1 de gestión)</li>
-            <li>Familiar: USD 16.49/mes (+ $1.50 de gestión)</li>
-        </ul>
-
-        <h2>Recargas de Internet y Videojuegos</h2>
-
-        <h3>Recargas de Internet</h3>
-        <ul>
-            <li>Claro, Tigo y MásMóvil (monto variable según necesidad del cliente)</li>
-            <li>$3 → Se cobra $3.50</li>
-            <li>$5 → Se cobra $5.50</li>
-            <li>$10 → Se cobra $11</li>
-        </ul>
-
-        <h3>Planes y Membresías para Videojuegos</h3>
-        <h4>PlayStation Plus</h4>
-        <ul>
-            <li>Essential (1 mes): $10.99 (+$1 de gestión)</li>
-            <li>Extra (1 mes): $15.49 (+$1.50 de gestión)</li>
-            <li>Premium (1 mes): $18.99 (+$1.50 de gestión)</li>
-        </ul>
-
-        <h4>Xbox Game Pass</h4>
-        <ul>
-            <li>Game Pass Ultimate (1 mes): $16.99 (+$1.50 de gestión)</li>
-            <li>Game Pass PC (1 mes): $9.99 (+$1 de gestión)</li>
-        </ul>
-
-        <h4>Nintendo Switch Online</h4>
-        <ul>
-            <li>Individual (1 mes): $3.99 (+$0.50 de gestión)</li>
-            <li>Familiar (12 meses): $34.99 (+$2 de gestión)</li>
-        </ul>
-
-        <h3>Recargas de Videojuegos</h3>
-        <h4>PlayStation Store</h4>
-        <ul>
-            <li>$10 → Se cobra $11.50</li>
-            <li>$25 → Se cobra $26.50</li>
-            <li>$50 → Se cobra $51.50</li>
-        </ul>
-
-        <h4>Xbox Store</h4>
-        <ul>
-            <li>$10 → Se cobra $11.50</li>
-            <li>$25 → Se cobra $26.50</li>
-            <li>$50 → Se cobra $51.50</li>
-        </ul>
-
-        <h4>Nintendo eShop</h4>
-        <ul>
-            <li>$10 → Se cobra $11.50</li>
-            <li>$20 → Se cobra $21.50</li>
-            <li>$50 → Se cobra $51.50</li>
-        </ul>
-
-        <h4>Steam Wallet</h4>
-        <ul>
-            <li>$5 → Se cobra $6.50</li>
-            <li>$10 → Se cobra $11.50</li>
-            <li>$20 → Se cobra $21.50</li>
-        </ul>
-
-        <h4>Riot Points (Valorant, League of Legends)</h4>
-        <ul>
-            <li>850 RP → Se cobra $7.50</li>
-            <li>1650 RP → Se cobra $13.50</li>
-            <li>2800 RP → Se cobra $22.50</li>
-        </ul>
-
-        <h4>Free Fire Diamantes</h4>
-        <ul>
-            <li>100 → Se cobra $1.50</li>
-            <li>500 → Se cobra $5.50</li>
-            <li>1000 → Se cobra $10.50</li>
-        </ul>
-
-        <h4>Roblox Robux</h4>
-        <ul>
-            <li>800 → Se cobra $10.99</li>
-            <li>1700 → Se cobra $21.99</li>
-            <li>4500 → Se cobra $52.99</li>
-        </ul>
-
-        <h4>Minecraft Minecoins</h4>
-        <ul>
-            <li>1720 → Se cobra $11.50</li>
-            <li>3500 → Se cobra $21.50</li>
-            <li>8800 → Se cobra $51.50</li>
-        </ul>
-
-        <h3>Recargas y Planes para Juegos Gacha</h3>
-
-        <h4>Genshin Impact / Honkai: Star Rail</h4>
-        <ul>
-            <li>Bendición Lunar ($4.99) → Se cobra $6</li>
-            <li>Expedición de Suministros ($4.99) → Se cobra $6</li>
-        </ul>
-
-        <h4>Azur Lane / Arknights / Blue Archive</h4>
-        <ul>
-            <li>Pack mensual ($4.99) → Se cobra $6</li>
-            <li>Pack mensual premium ($9.99) → Se cobra $11.50</li>
-        </ul>
-
-        <h4>Fate/Grand Order</h4>
-        <ul>
-            <li>Premium Summon Pack ($4.99) → Se cobra $6</li>
-            <li>Monthly Summon Pack ($9.99) → Se cobra $11.50</li>
-        </ul>
-
-        <h3>Recargas de Moneda Premium</h3>
-        <p>(Se cobra +$1.50 por cada $10 de recarga en todos los juegos)</p>
-
-        <h4>Genshin Impact / Honkai: Star Rail (Cristales Génesis / Jade Estelar)</h4>
-        <ul>
-            <li>300 Cristales ($4.99) → Se cobra $6</li>
-            <li>980 Cristales ($14.99) → Se cobra $16.50</li>
-            <li>1980 Cristales ($29.99) → Se cobra $31.50</li>
-            <li>3280 Cristales ($49.99) → Se cobra $51.50</li>
-        </ul>
-
-        <h4>Blue Archive (Pyroxenes)</h4>
-        <ul>
-            <li>1200 Pyroxenes ($9.99) → Se cobra $11.50</li>
-            <li>2400 Pyroxenes ($19.99) → Se cobra $21.50</li>
-            <li>5000 Pyroxenes ($39.99) → Se cobra $41.50</li>
-        </ul>
-
-        <h4>Arknights (Originium)</h4>
-        <ul>
-            <li>13 Originium ($9.99) → Se cobra $11.50</li>
-            <li>24 Originium ($19.99) → Se cobra $21.50</li>
-            <li>49 Originium ($39.99) → Se cobra $41.50</li>
-        </ul>
-
-        <h4>Fate/Grand Order (Saint Quartz)</h4>
-        <ul>
-            <li>12 Quartz ($7.99) → Se cobra $9.50</li>
-            <li>30 Quartz ($19.99) → Se cobra $21.50</li>
-            <li>84 Quartz ($49.99) → Se cobra $51.50</li>
-        </ul>
-
-        <h4>Azur Lane (Gemas)</h4>
-        <ul>
-            <li>1000 Gemas ($9.99) → Se cobra $11.50</li>
-            <li>2000 Gemas ($19.99) → Se cobra $21.50</li>
-            <li>5000 Gemas ($49.99) → Se cobra $51.50</li>
-        </ul>
-
+        <!-- Puedes agregar más planes aquí -->
     </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
