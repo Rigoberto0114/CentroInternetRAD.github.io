@@ -1,14 +1,14 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ff0000;  /* Rojo de fondo */
-    color: white;  /* Letras blancas */
+    background-color: #2a2a2a; /* Fondo más suave */
+    color: #d1d1d1; /* Texto más suave */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;  /* Mantén el color oscuro en el header */
+    background-color: #333; /* Fondo del header */
     padding: 20px;
     text-align: center;
 }
@@ -20,12 +20,12 @@ h1 {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #fff;  /* Color blanco para los enlaces */
+    color: #fff;
     font-size: 18px;
 }
 
 nav a:hover {
-    color: #f0f0f0;  /* Enlaces más claros al pasar el mouse */
+    color: #f0f0f0;
 }
 
 /* Estilos de los planes */
@@ -34,7 +34,7 @@ nav a:hover {
 }
 
 .plan {
-    background-color: #444;  /* Fondo gris para los planes */
+    background-color: #444; /* Fondo de los planes */
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -45,7 +45,7 @@ nav a:hover {
 }
 
 button {
-    background-color: #5e5eff;
+    background-color: #5c5cff; /* Botón morado más suave */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -56,7 +56,7 @@ button {
 }
 
 button:hover {
-    background-color: #4d4dff;
+    background-color: #4a4ad8; /* Hover del botón más suave */
 }
 
 /* Estilo para ocultar los planes */
