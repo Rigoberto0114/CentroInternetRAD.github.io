@@ -7,45 +7,55 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
         <h1>Centro Internet R.A.D</h1>
-        <nav>
-            <button id="btnPlanes">Planes</button>
-        </nav>
     </header>
-    
-    <main id="contenido">
-        <section id="planes" class="oculto">
-            <div class="plan">
-                <h2>Netflix - Centro Internet R.A.D</h2>
-                <p><strong>Planes (incluye comisión de gestión)</strong></p>
-                <p>Básico: USD 6.99/mes (+ $1 de gestión)</p>
-                <p>Estándar: USD 11.49/mes (+ $1.50 de gestión)</p>
-                <p>Premium: USD 15.49/mes (+ $1.50 de gestión)</p>
-                <p><strong>Métodos de Pago</strong></p>
-                <p>Yappy, Efectivo, Transferencia bancaria</p>
-            </div>
 
-            <div class="plan">
-                <h2>Disney+ - Centro Internet R.A.D</h2>
-                <p><strong>Planes (incluye comisión de gestión)</strong></p>
-                <p>Estándar: USD 13.49/mes (+ $1.50 de gestión)</p>
-                <p>Premium: USD 18.49/mes (+ $1.50 de gestión)</p>
-                <p><strong>Métodos de Pago</strong></p>
-                <p>Yappy, Efectivo, Transferencia bancaria</p>
-            </div>
+    <section id="inicio">
+        <h2>Bienvenido</h2>
+        <p>Explora nuestros servicios.</p>
+        <div class="botones">
+            <button onclick="irA('inicio')">Inicio</button>
+            <button onclick="irA('planes')">Planes</button>
+            <button onclick="irA('terminos')">Términos y Condiciones</button>
+        </div>
+    </section>
 
-            <div class="plan">
-                <h2>Spotify - Centro Internet R.A.D</h2>
-                <p><strong>Planes (incluye comisión de gestión)</strong></p>
-                <p>Individual: USD 10.99/mes (+ $1 de gestión)</p>
-                <p>Familiar: USD 16.49/mes (+ $1.50 de gestión)</p>
-                <p><strong>Métodos de Pago</strong></p>
-                <p>Yappy, Efectivo, Transferencia bancaria</p>
-            </div>
-        </section>
-    </main>
+    <section id="planes">
+        <h2>Planes</h2>
+        <div class="plan">
+            <h3>Netflix</h3>
+            <p>Básico: USD 6.99/mes (+ $1 de gestión)</p>
+            <p>Estándar: USD 11.49/mes (+ $1.50 de gestión)</p>
+            <p>Premium: USD 15.49/mes (+ $1.50 de gestión)</p>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="plan">
+            <h3>Disney+</h3>
+            <p>Estándar: USD 13.49/mes (+ $1.50 de gestión)</p>
+            <p>Premium: USD 18.49/mes (+ $1.50 de gestión)</p>
+        </div>
+
+        <div class="plan">
+            <h3>Spotify</h3>
+            <p>Individual: USD 10.99/mes (+ $1 de gestión)</p>
+            <p>Familiar: USD 16.49/mes (+ $1.50 de gestión)</p>
+        </div>
+    </section>
+
+    <section id="terminos">
+        <h2>Términos y Condiciones</h2>
+        <p>Todos los pagos deben realizarse por adelantado.</p>
+        <p>Las recargas pueden tardar hasta 24 horas en procesarse.</p>
+        <p>No se realizan reembolsos después de la compra.</p>
+    </section>
+
+    <script>
+        function irA(seccion) {
+            document.getElementById(seccion).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
 </body>
 </html>
