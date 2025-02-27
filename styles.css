@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #0d2e4f; /* Azul metálico */
+    background-color: #00A9A6; /* Azul metálico */
     color: white;
     margin: 0;
     padding: 0;
@@ -34,7 +34,7 @@ nav a:hover {
 }
 
 .plan {
-    background-color: #d1d1d1; /* Gris metálico claro */
+    background-color: #000; /* Negro para los recuadros */
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 8px;
