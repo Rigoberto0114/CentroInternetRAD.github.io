@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #0d253f; /* Azul metálico similar al de Disney+ */
+    background-color: #0d2e4f; /* Azul metálico */
     color: white;
     margin: 0;
     padding: 0;
@@ -34,7 +34,7 @@ nav a:hover {
 }
 
 .plan {
-    background-color: #444;
+    background-color: #d1d1d1; /* Gris metálico claro */
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -45,7 +45,7 @@ nav a:hover {
 }
 
 button {
-    background-color: #00aaff; /* Azul metálico similar al de Disney+ */
+    background-color: #5e5eff;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -56,7 +56,7 @@ button {
 }
 
 button:hover {
-    background-color: #0088cc;
+    background-color: #4d4dff;
 }
 
 /* Estilo para ocultar los planes */
