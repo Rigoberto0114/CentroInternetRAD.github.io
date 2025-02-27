@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #2a2a2a; /* Fondo más suave */
+    background-color: #121212; /* Fondo más oscuro */
     color: #d1d1d1; /* Texto más suave */
     margin: 0;
     padding: 0;
@@ -45,7 +45,7 @@ nav a:hover {
 }
 
 button {
-    background-color: #5c5cff; /* Botón morado más suave */
+    background-color: #00aaff; /* Azul metálico similar al de Disney+ */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -56,7 +56,7 @@ button {
 }
 
 button:hover {
-    background-color: #4a4ad8; /* Hover del botón más suave */
+    background-color: #0088cc; /* Hover del botón más suave */
 }
 
 /* Estilo para ocultar los planes */
