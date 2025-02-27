@@ -1,73 +1,69 @@
-/* Estilos generales */
 body {
-    background: linear-gradient(180deg, #1e0033, #3d1a5a); /* Degradado púrpura oscuro */
-    color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-/* Contenedor principal */
-.container {
-    width: 80%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* Encabezado */
 header {
-    background: rgba(30, 0, 51, 0.8); /* Fondo semi-transparente */
-    padding: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
     text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    border-bottom: 2px solid #6a0dad;
 }
 
-/* Menú de navegación */
-nav {
-    text-align: center;
-    margin-top: 20px;
+header nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-nav a {
-    color: #d8b4ff;
-    text-decoration: none;
-    font-size: 18px;
+header nav ul li {
+    display: inline;
     margin: 0 15px;
-    padding: 10px;
-    border-radius: 5px;
-    transition: 0.3s;
 }
 
-nav a:hover {
-    background: #6a0dad;
-    color: #ffffff;
-}
-
-/* Secciones */
-section {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-/* Enlaces */
-a {
-    color: #d8b4ff;
+header nav ul li a {
+    color: white;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+    margin: 20px 0;
 }
 
-/* Pie de página */
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 10px;
-    background: rgba(30, 0, 51, 0.8);
-    margin-top: 20px;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
