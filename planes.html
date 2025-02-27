@@ -22,7 +22,7 @@
     <section id="planes">
         <h2>Planes (incluye comisión de gestión)</h2>
 
-        <div class="plan zoom-section" data-bg="netflix.png">
+        <div class="plan zoom-section" data-bg="Netflix.png">
             <h3>Netflix</h3>
             <p>Básico: USD 6.99/mes (+ $1 de gestión)</p>
             <p>Estándar: USD 11.49/mes (+ $1.50 de gestión)</p>
@@ -58,9 +58,11 @@
             const background = document.getElementById("background-image");
 
             const observer = new IntersectionObserver((entries) => {
+                let visible = false;
+                
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add("zoom-active");
+                        visible = true;
                         const bgImage = entry.target.getAttribute("data-bg");
                         if (bgImage) {
                             background.style.backgroundImage = `url('${bgImage}')`;
@@ -68,16 +70,14 @@
                         }
                     }
                 });
+
+                if (!visible) {
+                    background.classList.remove("fade-in");
+                }
             }, { threshold: 0.3 });
 
             sections.forEach((section) => {
                 observer.observe(section);
-            });
-
-            window.addEventListener("scroll", () => {
-                if (!document.querySelector(".zoom-active")) {
-                    background.classList.remove("fade-in");
-                }
             });
         });
     </script>
