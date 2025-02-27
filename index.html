@@ -8,19 +8,46 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="logo">MiSitio</div>
-            <ul>
-                <li><a href="#">Plataforma</a></li>
-                <li><a href="#">Planes</a></li>
-                <li><a href="#">Enterprise</a></li>
-                <li><a href="#">Recursos</a></li>
-                <li><a href="#">Formación</a></li>
-            </ul>
-            <div class="nav-buttons">
-                <a href="contacto.html">Contáctanos</a>
-                <a href="login.html">Inicia Sesión</a>
-                <a href="registro.html" class="btn">Crear cuenta</a>
+            
+            <!-- Menú para desktop -->
+            <div class="desktop-nav">
+                <ul class="nav-links">
+                    <li><a href="#">Plataforma</a></li>
+                    <li><a href="#">Planes</a></li>
+                    <li><a href="#">Enterprise</a></li>
+                    <li><a href="#">Recursos</a></li>
+                    <li><a href="#">Formación</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="contacto.html">Contáctanos</a>
+                    <a href="login.html">Inicia Sesión</a>
+                    <a href="registro.html" class="btn">Crear cuenta</a>
+                </div>
+            </div>
+
+            <!-- Menú para móvil -->
+            <div class="mobile-nav">
+                <button class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="mobile-menu">
+                    <ul class="nav-links">
+                        <li><a href="#">Plataforma</a></li>
+                        <li><a href="#">Planes</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Recursos</a></li>
+                        <li><a href="#">Formación</a></li>
+                    </ul>
+                    <div class="nav-buttons">
+                        <a href="contacto.html">Contáctanos</a>
+                        <a href="login.html">Inicia Sesión</a>
+                        <a href="registro.html" class="btn">Crear cuenta</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -34,7 +61,7 @@
                 <a href="planes.html">Comparar planes</a>
             </div>
             <div class="hero-image">
-                <img src="imagen-ejemplo.png" alt="Gestión de redes sociales">
+                <img src="imagen-ejemplo.png" alt="Gestión de redes sociales" class="responsive-img">
             </div>
         </section>
     </main>
