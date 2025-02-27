@@ -8,8 +8,6 @@
 </head>
 <body>
 
-    <div id="background-image"></div> <!-- Fondo dinámico -->
-
     <header>
         <h1>Planes y Recargas - Centro Internet R.A.D</h1>
         <nav>
@@ -22,31 +20,31 @@
     <section id="planes">
         <h2>Planes (incluye comisión de gestión)</h2>
 
-        <div class="plan zoom-section" data-bg="Netflix.png">
+        <div class="plan zoom-section">
             <h3>Netflix</h3>
             <p>Básico: USD 6.99/mes (+ $1 de gestión)</p>
             <p>Estándar: USD 11.49/mes (+ $1.50 de gestión)</p>
             <p>Premium: USD 15.49/mes (+ $1.50 de gestión)</p>
         </div>
 
-        <div class="plan zoom-section" data-bg="disney.png">
+        <div class="plan zoom-section">
             <h3>Disney+</h3>
             <p>Estándar: USD 13.49/mes (+ $1.50 de gestión)</p>
             <p>Premium: USD 18.49/mes (+ $1.50 de gestión)</p>
         </div>
 
-        <div class="plan zoom-section" data-bg="spotify.png">
+        <div class="plan zoom-section">
             <h3>Spotify</h3>
             <p>Individual: USD 10.99/mes (+ $1 de gestión)</p>
             <p>Familiar: USD 16.49/mes (+ $1.50 de gestión)</p>
         </div>
 
         <h2>Recargas de Videojuegos</h2>
-        <div class="plan zoom-section" data-bg="playstation.png">
+        <div class="plan zoom-section">
             <p>PlayStation Store $10 → Se cobra $11.50</p>
         </div>
 
-        <div class="plan zoom-section" data-bg="genshin.png">
+        <div class="plan zoom-section">
             <p>Genshin Impact Bendición Lunar → Se cobra $6</p>
         </div>
 
@@ -55,25 +53,15 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const sections = document.querySelectorAll(".zoom-section");
-            const background = document.getElementById("background-image");
 
             const observer = new IntersectionObserver((entries) => {
-                let visible = false;
-                
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        visible = true;
-                        const bgImage = entry.target.getAttribute("data-bg");
-                        if (bgImage) {
-                            background.style.backgroundImage = `url('${bgImage}')`;
-                            background.classList.add("fade-in");
-                        }
+                        entry.target.classList.add("zoom-active");
+                    } else {
+                        entry.target.classList.remove("zoom-active");
                     }
                 });
-
-                if (!visible) {
-                    background.classList.remove("fade-in");
-                }
             }, { threshold: 0.3 });
 
             sections.forEach((section) => {
