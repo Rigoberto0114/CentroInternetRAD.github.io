@@ -1,14 +1,14 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: white;
+    background-color: #ff0000;  /* Rojo de fondo */
+    color: white;  /* Letras blancas */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: #333;  /* Mantén el color oscuro en el header */
     padding: 20px;
     text-align: center;
 }
@@ -20,12 +20,12 @@ h1 {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #fff;
+    color: #fff;  /* Color blanco para los enlaces */
     font-size: 18px;
 }
 
 nav a:hover {
-    color: #f0f0f0;
+    color: #f0f0f0;  /* Enlaces más claros al pasar el mouse */
 }
 
 /* Estilos de los planes */
@@ -34,7 +34,7 @@ nav a:hover {
 }
 
 .plan {
-    background-color: #444;
+    background-color: #444;  /* Fondo gris para los planes */
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 8px;
