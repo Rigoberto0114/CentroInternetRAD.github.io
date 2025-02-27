@@ -45,3 +45,15 @@ section {
     width: 90%;
     color: black;
 }
+
+/* Animación de Zoom */
+.zoom-section {
+    transform: scale(0.9); /* Inicia con un zoom más pequeño */
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.zoom-active {
+    transform: scale(1); /* Se agranda cuando entra en pantalla */
+    opacity: 1;
+}
