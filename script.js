@@ -35,3 +35,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const loginForm = document.querySelector("form");
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        let email = document.querySelector("input[type='text']").value;
+        let password = document.querySelector("input[type='password']").value;
+
+        // Aquí puedes agregar validaciones
+        if (email === "usuario@example.com" && password === "1234") {
+            alert("Inicio de sesión exitoso");
+            window.location.href = "planes.html"; // Redirige a otra página
+        } else {
+            alert("Correo o contraseña incorrectos");
+        }
+    });
+});
