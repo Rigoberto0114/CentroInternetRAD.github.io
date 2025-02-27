@@ -1,8 +1,9 @@
+// Función para mostrar u ocultar los planes
 document.getElementById("btnPlanes").addEventListener("click", function() {
-    let planes = document.getElementById("planes");
-    if (planes.classList.contains("oculto")) {
-        planes.classList.remove("oculto");  // Muestra la sección de planes
+    const planesSection = document.getElementById("planes");
+    if (planesSection.classList.contains("oculto")) {
+        planesSection.classList.remove("oculto");
     } else {
-        planes.classList.add("oculto");  // Oculta la sección de planes
+        planesSection.classList.add("oculto");
     }
 });
